@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #outer
+        {
+            min-height: 800px;
+            width: 1200px;
+            border: 1px solid black;
+            margin:0px auto;
+        }
+        #slider
+        {
+            min-height: 600px;
+            width: 1200px;
+            background:url(image3.jpg);
+            background-size: cover;
+            animation: slider 9s infinite;
+         }
+         #slider1
+         {
+            height: 600px;
+            width: 1200px;
+            background: rgba (0,0,0,.5);
+         }
+         #slider:hover
+         {
+            animation-play-state: paused;
+         }
+       
+            @keyframes slider {
+       
+            0%{
+                background: url(pexels1.jpg);
+                background-size:cover;
+                background-attachment:fixed;
+
+            }
+            50%{
+                background:url(image6.jpg);
+                background-size:cover;
+                background-attachment:fixed;
+
+            }
+            100%{
+                background:url(image4.jpg);
+                background-size:cover;
+                background-attachment:fixed;
+
+            }
+        }
+        #top
+        {
+            height: 50px;
+            width:12px;
+
+        }
+        #logo
+        {
+            height: 30px;
+            /* width: 1000px; */
+            float: left;
+        
+        }
+        #menu
+        {
+            height: 50px;
+            width: 900px;
+            float: left;
+            margin-top: 0px; 
+
+        }
+        #menu ul
+        {
+            list-style:none;
+
+        }
+        #menu ul li 
+        {
+            height: 50px;
+            font-size: 25px;
+            width: 110px;
+            text-align: center;
+            line-height: 45px;
+            float: left;
+            margin-left: 5px;
+            color:black;
+            font-weight: bold;
+            transition:all 1s;
+            backdrop-filter: blur (5px);
+        }
+        #menu ul li:hover 
+        {
+            background: #E91E63;
+            transition: all 2s;
+            color: white;
+
+        }
+        img
+        {
+          border-radius: 50%;
+          border: 20px solid yellow;
+          height: 250px;
+          width: 250px;
+          padding: 10px;
+          box-sizing: border-box;
+          margin: 60px auto;
+          display: block;
+          animation: abc 2s infinite alternate;
+        }
+        
+        @keyframes abc
+        {
+           0% {
+               box-shadow: 0px 0px 1px rgba(243,80,78,1) ;
+            }
+            100%{
+                box-shadow: 0px 0px 0px 10px rgba(243, 80, 78 ,.8),0px 0px 0px 20px rgba(243, 80, .6),0px 0px 0px 30px rgba(243, 80 ,78, .4),0px 0px 0px 40px rgba(243,80,.2);
+            
+        }
+        }
+        #btn
+        {
+            height: 50px;
+            width: 150px;
+            display: block;
+            text-align: center;
+            line-height: 50px;
+            color: rgba (243,80,78,1);
+             margin: 0px auto;
+             backdrop-filter: blur(40px);
+
+        }
+        #about
+        {
+        min-height:350px;
+        width: 1200px;
+        padding: 0px 100px;
+        box-sizing: border-box;
+
+        }
+        #ufooter
+        {
+            height: 300px;
+            width: 1200px;
+            background: rgba(0 0 0 .6);
+
+        }
+        #bfooter
+        {
+            height: 50px;
+            width: 1200px;
+            background: rgba(0 0 0 .8);
+
+        }
+        #heading
+        {
+            font-size: 30px;
+            text-align: center;
+            padding-top:25px ;
+
+        }
+        #about1
+        {
+            min-height: 350px;
+            width: 100px;
+
+        }
+        #left
+        {
+            height: 350px;
+            width: 40px;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+       }
+       #right
+       {
+        height: 350px;
+        width: 600px;
+        float: left;
+        padding: 50px;
+        box-sizing: border-box;
+        text-align: justify;
+
+
+       }
+       #left img
+       {
+        height: 100%;
+        width: 100%;
+
+       }
+
+
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="slider">
+            <div id="slider1">
+                <div id="top">
+                    <div id="logo"> 
+                        <div id="menu">
+                           <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Register</li></a>
+                            <a href="#"><li>Service</li></a> 
+                            <a href="#"><li>Login</li></a>
+                            <a href="#"><li>contact</li></a>
+                            </ul>
+                        </div>
+                        <div> 
+                              <img src="kamal2.jpg" class="im alt=">
+                              <div style="font-size: 50px;  text-align:center; font-weight:bold; color:rgba(243,80,78,1); font-family:arial;">
+                                 Er-kamal Prajapati</div>
+                                 <div style="font-size: 30px;  text-align:center; font-weight:bold; color:rgba(243,80,78,1); font-family:arial;">I Am Webdesigner</div>
+                               <div>
+                                    <a href="#" id="btn">downlod cv</a>
+                                    <div id="about"></div>
+                                    
+                                    <div id="about1"></div>
+                                    <div id="left"></div>
+                                    <!-- <img scr="kamal2.jpg"alt=""> -->
+                                </div>
+                                 
+                        </div> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="heading"> ABOUT <b style="color: rgba(243,80,78,1);">US</b></div>
+        <div id="right">My name is kamal prajapati i am 22 year old i am from
+             uttar pradesh jaunpur city i am completed my school from up borad
+             Subhash chandra bose academy inter collage IIM road lucknow I am 
+             bca greduate from mohmmad hasanpg PG college jaunpur .</div>
+    </div>
+</body>
+</html>
